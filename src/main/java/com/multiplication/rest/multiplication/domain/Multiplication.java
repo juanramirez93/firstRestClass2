@@ -26,7 +26,7 @@ public final class Multiplication {
 	private Long id;
     // Both factors
     private final int factorA;
-    private final int factorB;
+    private final int factorBb;
 
     // Empty constructor for JSON (de)serialization
     Multiplication() {

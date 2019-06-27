@@ -9,8 +9,10 @@ import lombok.ToString;
 import java.io.Serializable;
 
 /**
- * Event that models the fact that a {@link microservices.book.multiplication.domain.Multiplication}
- * has been solved in the system. Provides some context information about the multiplication.
+ * Event that models the fact that a
+ * {@link microservices.book.multiplication.domain.Multiplication} has been
+ * solved in the system. Provides some context information about the
+ * multiplication.
  */
 @RequiredArgsConstructor
 @Getter
@@ -18,17 +20,15 @@ import java.io.Serializable;
 @EqualsAndHashCode
 public class MultiplicationSolvedEvent implements Serializable {
 
-
-	private final Long multiplicationResultAttemptId;
+    private final Long multiplicationResultAttemptId;
     private final Long userId;
     private final boolean correct;
-	public MultiplicationSolvedEvent() {
-		super();
-		this.multiplicationResultAttemptId = 0L;
-		this.userId = 0L;
-		this.correct = false;
-	}
-    
-    
+
+    public MultiplicationSolvedEvent() {
+	super();
+	this.multiplicationResultAttemptId = 0L;
+	this.userId = 0L;
+	this.correct = false;
+    }
 
 }
